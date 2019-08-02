@@ -141,90 +141,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>rename GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>rename HDAS to HDEF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>rename AZAL to HDEF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QVpBTA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>rename B0D3 to HDAU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QjBEMw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERBVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>rename HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>rename MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TUVJXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>rename SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
@@ -644,7 +560,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -wegnoegpu</string>
+		<string>dart=0 nv_disable=1-cdfon -wegnoegpu -v</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -660,126 +576,10 @@
 	<string>This config is created by @hieplpvip for UX430 (KabyLake)</string>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>
-				I2Rpc3BsYXkA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>
-				/////w==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>
-				I2Rpc3BsYXkA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>
-				/////w==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus vendor-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>vendor-id</string>
-				<key>Value</key>
-				<data>
-				//8AAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus device-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>device-id</string>
-				<key>Value</key>
-				<data>
-				//8AAA==
-				</data>
-			</dict>
-		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
 			<integer>0</integer>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>IntelGFX</key>
-			<string>0x59168086</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -788,6 +588,13 @@
 				<key>layout-id</key>
 				<data>
 				FQAAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>device-id</key>
+				<data>
+				pT4AAA==
 				</data>
 			</dict>
 		</dict>
@@ -868,12 +675,10 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x59170000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
