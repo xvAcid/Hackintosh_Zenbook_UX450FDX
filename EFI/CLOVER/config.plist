@@ -325,20 +325,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>(Battery) Rename Method(FBST,4) to Method(XBST,4)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RkJTVAQ=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJTVAQ=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>(ATK) rename Method(IANE,1,S) to XANE</string>
 					<key>Disabled</key>
 					<false/>
