@@ -584,22 +584,6 @@
 				<data>
 				pT4AAA==
 				</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>
-				AQUJAAAEAACHAQAA
-				</data>
-				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>
-				AwQKAAAIAACHAQAA
-				</data>
-				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
