@@ -1,0 +1,6 @@
+hidpi
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+
+Asus dsdt
+https://github.com/hieplpvip/AsusSMC/wiki/Installation-Instruction
