@@ -548,7 +548,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1-cdfon -wegnoegpu -v</string>
+		<string>dart=0 nv_disable=1 -wegnoegpu -v -cdfon</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -567,7 +567,9 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<integer>12</integer>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>Properties</key>
 		<dict>
